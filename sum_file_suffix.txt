@@ -1,0 +1,1 @@
+ls -al -R | awk '{if ( ~ /^[^\.]+\.[a-zA-Z]+$/) a[substr(,index(, .), length())]++} END {for (i in a) print a[i], t, i}' | sort -n -r
